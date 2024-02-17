@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
+}
+
+
+/* mouse effects */
+.hideCursor {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    cursor: none;
+}
+
+.dot {
+    pointer-events: none;
+    z-index: 10;
+    position: fixed;
+    height: 7px;
+    width: 7px;
+    background-color: #8c8c8c;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ball {
+    pointer-events: none;
+    --ball-size: 50px;
+    position: fixed;
+    height: var(--ball-size);
+    width: var(--ball-size);
+    border-radius: 50%;
+    border: 1.5px solid #ffffff;
+    top: calc(var(--ball-size) / 2 * -1);
+    left: calc(var(--ball-size) / 2 * -1);
+
+    cursor: default;
+}
+
+
+
+/* start button */
+.startButton {
+    user-select: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 2rem;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 20px 60px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
+    cursor: none;
+    transition: 0.3s ease-in-out;
+}
+
+.startButton:hover {
+    padding: 15px 35px;
+    font-size: 32px;
+}
+.startButton:active {
+    transition: 0.1s ease-in-out;
+    padding: 10px 30px;
+    font-size: 28px;
+}
+
+/* other buttons */
+.autoClickerButtons button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 1rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: none;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
+    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.autoClickerButtons {
+    position: fixed;
+    user-select: none;
+    top: 8%; /* Adjust this to position the buttons vertically */
+    left: 8%; /* Adjust this to position the buttons horizontally */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.autoClickerButtons button:hover {
+    transform: scale(0.9); /* Change this to your preferred scale */
+}
+
+.autoClickerButtons button:active {
+    transition: 0.1s ease-in-out;
+    transform: scale(0.7); /* Change this to your preferred scale */
+}

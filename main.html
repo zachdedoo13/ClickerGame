@@ -6,46 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YES</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <! cool looking stuff>
     <div id="mouseEffects">
-        <div class="hideCursor">
-        <style>
-            /* style.css */
-            body {
-                cursor: none;
-                padding: 0;
-                overflow: hidden;
-                background-color: #000000;
-            }
-            .hideCursor {
-                position: fixed;
-                height: 100%;
-                width: 100%;
-                cursor: none;
-            }
-
-        </style>
-</div>
+        <div class="hideCursor"></div>
         <div class="dot">
-            <style>
-                /* style.css */
-                .dot {
-                    pointer-events: none;
-                    z-index: 10;
-                    position: fixed;
-                    height: 7px;
-                    width: 7px;
-                    background-color: #8c8c8c;
-                    border-radius: 50%;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            </style>
             <script>
                 const dot = document.querySelector('.dot');
                 window.addEventListener('mousemove', (e) => {
@@ -55,31 +23,6 @@
             </script>
         </div>
         <div class="ball">
-        <style>
-            /* style.css */
-
-            body {
-                cursor: none;
-                padding: 0;
-                overflow: hidden;
-                background-color: #000000;
-            }
-
-            .ball {
-                pointer-events: none;
-                --ball-size: 50px;
-                position: fixed;
-                height: var(--ball-size);
-                width: var(--ball-size);
-                border-radius: 50%;
-                border: 1.5px solid #ffffff;
-                top: calc(var(--ball-size) / 2 * -1);
-                left: calc(var(--ball-size) / 2 * -1);
-
-                cursor: default;
-            }
-
-        </style>
         <script>
             /* script2.js */
             // making a ball follow the mouse and squeeze towards it
@@ -161,38 +104,6 @@
         <div id="startButton">
         <div class="startButton">
             <p>0</p>
-            <style>
-                /* style.css */
-                .startButton {
-                    user-select: none;
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    border-radius: 2rem;
-                    transform: translate(-50%, -50%);
-                    background-color: #000000;
-                    padding: 20px 60px;
-                    border: 2px solid #ffffff;
-                    color: #ffffff;
-                    font-size: 30px;
-                    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
-                    cursor: none;
-                    transition: 0.3s ease-in-out;
-                }
-
-                .startButton:hover {
-                    padding: 15px 35px;
-                    font-size: 32px;
-                }
-                .startButton:active {
-                    transition: 0.1s ease-in-out;
-                    padding: 10px 30px;
-                    font-size: 28px;
-                }
-
-
-
-            </style>
             <script type="module">
                 /* script.js */
                 const startButton = document.querySelector('.startButton');
@@ -210,46 +121,6 @@
 
         <div id="buttons">
         <div class="autoClickerButtons">
-            <style>
-                /* style.css */
-
-                .autoClickerButtons button {
-                    padding: 10px 20px;
-                    font-size: 20px;
-                    background-color: #000000;
-                    border-radius: 1rem;
-                    color: #ffffff;
-                    border: 2px solid #ffffff;
-                    cursor: none;
-                    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
-                    transition: transform 0.3s ease-in-out;
-                    flex-direction: column;
-                    gap: 20px;
-                    margin-bottom: 20px;
-                }
-
-                .autoClickerButtons {
-                    position: fixed;
-                    user-select: none;
-                    top: 8%; /* Adjust this to position the buttons vertically */
-                    left: 8%; /* Adjust this to position the buttons horizontally */
-                    transform: translateX(-50%);
-                    display: flex;
-                    flex-direction: column; /* Stack the buttons vertically */
-                    gap: 20px;
-                    margin-bottom: 20px;
-                }
-
-                .autoClickerButtons button:hover {
-                    transform: scale(0.9); /* Change this to your preferred scale */
-                }
-
-                .autoClickerButtons button:active {
-                    transition: 0.1s ease-in-out;
-                    transform: scale(0.7); /* Change this to your preferred scale */
-                }
-
-            </style>
 
             <button id="button1">0</button>
             <button id="button2">0</button>
