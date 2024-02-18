@@ -1,6 +1,6 @@
-export let beanCounter = 0;
 
-export let autoBeanBirtherType1 = 0;
+
+
 
 export function addBeans(amount) {
   beanCounter += amount;

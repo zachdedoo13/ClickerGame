@@ -45,7 +45,7 @@ body {
 
 
 
-/* start button */
+/* buttons */
 .startButton {
     user-select: none;
     position: fixed;
@@ -108,4 +108,19 @@ body {
 .autoClickerButtons button:active {
     transition: 0.1s ease-in-out;
     transform: scale(0.7); /* Change this to your preferred scale */
+}
+
+/* ui 8 */
+.basicStorage {
+    user-select: none;
+    top: 20%;
+    left: 20%;
+    position: fixed;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
+    cursor: none;
 }
